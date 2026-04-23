@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Christian Rigor | Senior Architect — Monochrome Terminal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="dashboard-sidebar">
+            <div class="logo"><a href="index.html"><span class="logo-bracket">&lt;</span><span class="logo-text">CBR</span><span class="logo-bracket">/&gt;</span></a></div>
+            <nav>
+                <ul class="dashboard-nav">
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fas fa-key"></i> Login</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dashboard-main">
+            <div class="dashboard-content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Christian Benjamin<br>A. Rigor</h1>
+                    <div class="typed-wrapper"><span class="typed-prefix">></span> <span class="typed-text" id="typedText"></span><span class="typed-cursor">_</span></div>
+                    <p class="hero-description">I'm a passionate Junior Web Developer focused on building responsive, user-friendly, and secure web applications. I turn ideas into functional digital experiences using modern technologies, while continuously improving my skills in development, deployment, and system design. Explore my work to see how I create efficient, reliable, and visually engaging solutions.</p>
+                    <div class="hero-buttons"><a href="#projects" class="btn-primary">Explore work <i class="fas fa-arrow-right"></i></a><a href="#contact" class="btn-outline">Contact <i class="fas fa-paper-plane"></i></a></div>
+                </div>
+                <div class="hero-visual">
+                    <img src="uploads/123" alt="Portfolio" class="hero-image" onerror="this.src='https://via.placeholder.com/400x400?text=Christian+Rigor'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">// whoami</span><h2 class="section-title">Christian Benjamin A. <span class="accent">Rigor</span></h2></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">About Me</p>
+                    <p>I am a Junior Web Developer who is passionate about creating functional and user-friendly websites. I enjoy turning ideas into real working systems, whether it's building simple web pages or developing applications with login systems, data handling, and basic security features. I have experience working with technologies like HTML, CSS, JavaScript, and Python, and I'm continuously learning new tools to improve my skills.</p>
+                    <p>As a developer, I focus on writing clean code, solving problems efficiently, and making sure the user experience is smooth and reliable. I also have experience in deploying projects and managing basic system structures, which helps me understand how applications work from development to production.</p>
+                    <p>I am eager to grow in this field, take on new challenges, and contribute to projects that make a meaningful impact.</p>
+                    <div class="info-cards">
+                        <div class="info-card"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span>Guimba Nueva Ecija Phillipines</span></div></div>
+                        <div class="info-card"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>christianbenjaminrigor@gmail.com</span></div></div>
+                        <div class="info-card"><i class="fab fa-github"></i><div><strong>GitHub</strong><span>chrstn17</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">// portfolio</span><h2 class="section-title">featured <span class="accent">projects</span></h2></div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="fullstack">fullstack</button>
+                <button class="filter-btn" data-filter="frontend">frontend</button>
+                <button class="filter-btn" data-filter="backend">backend</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid"><div class="loading-spinner"><div class="spinner"></div></div></div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal"><div class="modal-content"><span class="modal-close">&times;</span><div id="modalBody"></div></div></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">// contact</span><h2 class="section-title">Let's <span class="accent">collaborate</span></h2></div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>build something robust</h3>
+                    <p>Open for freelance & senior contracts.</p>
+                    <div class="contact-details">
+                        <div><i class="fas fa-phone-alt"></i> +63 912 345 6789</div>
+                        <div><i class="fas fa-envelope"></i> christian.rigor@devportfolio.com</div>
+                    </div>
+                    <div class="social-profiles">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="input-group"><input type="text" id="name" placeholder="Full name"><span class="error-msg" id="nameError"></span></div>
+                        <div class="input-group"><input type="email" id="email" placeholder="Email address"><span class="error-msg" id="emailError"></span></div>
+                        <div class="input-group"><select id="subject"><option value="" disabled selected>Inquiry type</option><option value="hire">Hiring</option><option value="collab">Collaboration</option></select><span class="error-msg" id="subjectError"></span></div>
+                        <div class="input-group"><textarea id="message" rows="3" placeholder="Message"></textarea><span class="error-msg" id="messageError"></span></div>
+                        <div id="formFeedback" class="form-feedback"></div>
+                        <button type="submit" class="btn-primary btn-full">Send message <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><span class="logo-bracket">&lt;</span><span class="logo-text">CBR</span><span class="logo-bracket">/&gt;</span></div>
+                <div class="footer-bottom"><p>© 2026 Christian Benjamin A. Rigor — monochrome architecture</p><p><i class="fas fa-heart"></i> terminal-ready</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+        </div> <!-- dashboard-content -->
+    </main> <!-- dashboard-main -->
+</div> <!-- dashboard -->
+</body>
+</html>

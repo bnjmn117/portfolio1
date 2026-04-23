@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | John Rey Santos Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="dashboard-sidebar">
+            <div class="logo"><a href="index.html"><span class="logo-bracket">&lt;</span><span class="logo-text">CBR</span><span class="logo-bracket">/&gt;</span></a></div>
+            <nav>
+                <ul class="dashboard-nav">
+                    <li><a href="index.html"><i class="fas fa-arrow-left"></i> Back to Portfolio</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dashboard-main">
+            <div class="dashboard-content">
+                <div class="dashboard-header">
+                    <h1 class="dashboard-title">Register</h1>
+                    <p class="dashboard-subtitle">Join the portfolio network</p>
+                </div>
+                <div class="dashboard-card">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="regName" placeholder="John Rey Santos" required>
+                            <span class="error-message" id="regNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="regEmail" placeholder="john@example.com" required>
+                            <span class="error-message" id="regEmailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" id="regPassword" placeholder="At least 6 characters" required>
+                            <span class="error-message" id="regPasswordError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-check-circle"></i> Confirm Password</label>
+                            <input type="password" id="regConfirmPassword" placeholder="Confirm your password" required>
+                            <span class="error-message" id="regConfirmError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" id="termsCheckbox" required>
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div id="registerFeedback" class="form-feedback"></div>
+                        
+                        <button type="submit" class="btn-primary btn-block">Register <i class="fas fa-user-plus"></i></button>
+                    </form>
+                    
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/auth.js"></script>
+</body>
+</html>
